@@ -14,7 +14,12 @@ gulp.task('default', function(){
         script: 'app.js', 
         ext: 'js', 
         env: {
-            PORT: 8000 
+            PORT: 8000,
+            DB_USER : "ecomuser",
+            DB_PWD: "ecomdashpwd",
+            DB_HOST: "ecomdb.cquhgooihhhn.us-east-1.rds.amazonaws.com",
+            DB_PORT: 5432,
+            DB_NAME: "gspot"
         },
         ignore: ['./node_modules/**']
     })

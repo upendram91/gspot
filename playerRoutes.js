@@ -4,7 +4,7 @@ var playerRoutes = function(){
 
     var pg = require('./lib/postgres');
     // Your database configuration
-    var DATABASE_URL = 'postgres://ecomuser:ecomdashpwd@ecomdb.cquhgooihhhn.us-east-1.rds.amazonaws.com:5432/gspot';
+    var DATABASE_URL = "postgres://" + process.env.DB_USER + ":" + process.env.DB_PWD + "@" + process.env.DB_HOST + ":" + process.env.DB_PORT + "/" + process.env.DB_NAME;
 
     // Connect to mysql database
     pg.initialize(DATABASE_URL, function(err) {
