@@ -1,4 +1,4 @@
-# ecomapi
+# GSpot API
 API for Gamer Spot DB
 
 ### setup
@@ -10,7 +10,7 @@ From Root Server, run `gulp`
 ### stop server
 `Ctrl+C` and then `y` to terminate the gulp task
 
-### Currently Phase
+### Current phase
 `Exploration` -  Server starts, creates a database connection, closes connection in the callback and waits for incoming API requests.
 
 `Gotchas` - Server prints error message if connection cannot be established.
